@@ -25,9 +25,17 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
+        };
+
+        td_lshft: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&kp caps_word>;
         };
     };
 
@@ -35,6 +43,8 @@
                 compatible = "zmk,combos";
 
                 COMBO(ESC, &kp ESC, 0 1)
+                COMBO(DEL, &kp DEL, 8 9)
+                
         };
 
     conditional_layers {
@@ -52,7 +62,7 @@
             &kp Q      &kp W      &kp F      &kp P         &kp G          &kp J      &kp L      &kp U      &kp Y      &kp SQT
             &kp A      HRML(R,        S,         T)        &kp D          &kp H      HRMR(N,        E,         I)     &kp O
             &kp Z      &kp X      &kp C      &kp V         &kp B          &kp K      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                             &lt 2 LSHFT   &kp ENTER      &kp SPACE  &lt 1 BSPC
+                                             &td_lshft     &lt 2 ENTER    &kp SPACE  &lt 1 BSPC
             >;
         };
 
