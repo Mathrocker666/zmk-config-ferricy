@@ -44,6 +44,7 @@
 
                 COMBO(ESC, &kp ESC, 0 1)
                 COMBO(DEL, &kp DEL, 8 9)
+                COMBO(TAB, &kp TAB, 1 2)
                 
         };
 
