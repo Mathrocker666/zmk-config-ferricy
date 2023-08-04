@@ -60,37 +60,37 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp Q      &kp W      &kp F      &kp P         &kp G          &kp J            &kp L      &kp U      &kp Y      &kp SQT
-            &kp A      HRML(R,        S,         T)        &kp D          &kp H            HRMR(N,        E,         I)     &kp O
-            &kp Z      &kp X      &kp C      &kp V         &kp B          &kp K            &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                             &lt 2 DEL     &td_enter      &ht LSHFT SPACE  &lt 1 BSPC
+            &kp Q      &kp W      &kp F      &kp P         &kp G            &kp J            &kp L      &kp U      &kp Y      &kp SQT
+            &kp A      HRML(R,    S,         T)            &kp D            &kp H            HRMR(N,    E,         I)         &kp O
+            &kp Z      &kp X      &kp C      &kp V         &kp B            &kp K            &kp M      &kp COMMA  &kp DOT    &kp FSLH
+                                             &lt 2 DEL     &td_enter        &ht LSHFT SPACE  &lt 1 BSPC
             >;
         };
 
         right_layer {
             bindings = <
-            &kp INS    &kp N7     &kp N8     &kp N9     &none         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
-            &kp DEL    &kp N4     &kp N5     &kp N6     &none         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
-           &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &none     &none     &none     &none     &none
-                                             &none     &kp ESC        &none     &none
+            &kp INS     &kp N7     &kp N8     &kp N9     &none          &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
+            &kp DEL     &kp N4     &kp N5     &kp N6     &none          &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp SEMI
+            &caps_word  &kp N1     &kp N2     &kp N3     &kp N0         &none      &none      &none      &none      &none
+                                              &none      &kp ESC        &none      &none
             >;
         };
 
         left_layer {
             bindings = <
-            &none     &kp LBKT   &kp LBRC   &kp RBRC   &none         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
-            &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
+            &none     &kp LBKT  &kp LBRC  &kp RBRC  &none         &kp CARET  &kp LPAR   &kp RPAR   &kp RBKT   &kp TILDE
+            &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
             &none     &none     &none     &none     &none         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &none
-                                             &none     &none         &none     &none
+                                          &none     &none         &none     &none
             >;
         };
 
         tri_layer {
             bindings = <
-            &sys_reset   &none    &none  &none       &bt BT_SEL 0    &none     &none     &none     &none    &sys_reset
-            &none        &K_PREV  &K_PP  &K_NEXT     &bt BT_SEL 1    &none     &none     &none     &none    &bootloader
-            &bootloader  &none    &none  &bt BT_CLR  &bt BT_SEL 2    &none     &none     &none     &none     &none
-                                         &none       &none           &none     &none
+            &sys_reset   &none       &none     &none       &bt BT_SEL 0             &none     &none     &none     &none    &sys_reset
+            &none        &kp K_PREV  &kp K_PP  &kp K_NEXT  &bt BT_SEL 1             &none     &none     &none     &none    &bootloader
+            &bootloader  &none       &none     &bt BT_CLR  &bt BT_SEL 2             &none     &none     &none     &none     &none
+                                               &none       &none                    &none     &none
             >;
         };
     };
