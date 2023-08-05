@@ -61,8 +61,8 @@
 
         right_layer {
             bindings = <
-            &kp INS     &kp N7  &kp N8  &kp N9  &kp PLUS       &none  &kp HOME    &kp UP    &kp END     &kp PG_UP
-            &none       &kp N4  &kp N5  &kp N6  &kp MINUS      &none  &kp LEFT    &kp DOWN  &kp RIGHT   &kp PG_DN
+            &kp INS     &kp N7  &kp N8  &kp N9  &kp PLUS       &none  &kp PG_UP   &kp UP    &kp PG_DN   &kp HOME
+            &none       &kp N4  &kp N5  &kp N6  &kp MINUS      &none  &kp LEFT    &kp DOWN  &kp RIGHT   &kp END
             &caps_word  &kp N1  &kp N2  &kp N3  &kp N0         &none  &kp C_PREV  &kp C_PP  &kp C_NEXT  &none
                                         &trans  &kp ESC        &none  &none
             >;
@@ -72,7 +72,7 @@
             bindings = <
             &none     &kp BSLH  &none     &none     &none         &kp CARET  &kp RPAR   &kp RBKT  &kp RBRC   &kp TILDE
             &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT     &kp ASTRK  &kp LPAR   &kp LBKT  &kp LBRC   &kp GRAVE
-            &none     &none     &none     &none     &none         &kp AMPS   &kp UNDER  &none     &kp PIPE   &none
+            &none     &none     &none     &none     &none         &kp AMPS   &none      &none     &kp PIPE   &none
                                           &none     &none         &none      &trans
             >;
         };
