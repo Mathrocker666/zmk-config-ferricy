@@ -49,6 +49,30 @@
                 = <&macro_tap &kp GRAVE &kp A>
                 ;
         };
+        macro_e_grave: macro_e_grave {
+            label = "macro_e_grave";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp GRAVE &kp E>
+                ;
+        };
+        macro_e_aigu: macro_e_aigu {
+            label = "macro_e_aigu";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RA(E)>
+                ;
+        };
+        macro_e_tre: macro_e_tre {
+            label = "macro_e_tre";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp E>
+                ;
+        };
     };
 
     combos {
@@ -99,9 +123,9 @@
 
         tri_layer {
             bindings = <
-            &sys_reset   &kp PSCRN  &kp LA(F4)  &none       &bt BT_SEL 0             &none   &kp RA(COMMA)  &none           &none  &none
-            &bootloader  &none      &none       &kp LSHFT   &bt BT_SEL 1             &none   &kp RA(E)      &macro_a_grave  &none  &none
-            &none        &none      &none       &bt BT_CLR  &bt BT_SEL 2             &none   &none          &none           &none  &none
+            &sys_reset   &kp PSCRN  &kp LA(F4)  &none       &bt BT_SEL 0             &none   &kp RA(COMMA)   &none           &none          &none
+            &bootloader  &none      &none       &kp LSHFT   &bt BT_SEL 1             &none   &macro_e_aigu   &macro_e_grave  &macro_e_circ  &macro_e_tre
+            &none        &none      &none       &bt BT_CLR  &bt BT_SEL 2             &none   &macro_a_grave  &none           &none          &none
                                                 &trans      &trans                   &trans  &trans
             >;
         };
