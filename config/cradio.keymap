@@ -113,8 +113,8 @@
 
         right_layer {
             bindings = <
-            &kp INS     &kp N7  &kp N8  &kp N9  &kp PLUS       &none   &kp PG_UP   &kp UP    &kp PG_DN   &kp HOME
-            &none       &kp N4  &kp N5  &kp N6  &kp MINUS      &none   &kp LEFT    &kp DOWN  &kp RIGHT   &kp END
+            &kp INS     &kp N7  &kp N8  &kp N9  &kp PLUS       &HOME   &kp PG_UP   &kp UP    &kp PG_DN   &none
+            &none       &kp N4  &kp N5  &kp N6  &kp MINUS      &END    &kp LEFT    &kp DOWN  &kp RIGHT   &none
             &caps_word  &kp N1  &kp N2  &kp N3  &kp N0         &none   &kp C_PREV  &kp C_PP  &kp C_NEXT  &none
                                         &trans  &trans         &trans  &trans
             >;
