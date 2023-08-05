@@ -73,6 +73,14 @@
                 = <&macro_tap &kp DQT &kp E>
                 ;
         };
+        macro_e_circ: macro_e_circ {
+            label = "macro_e_circ";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp E>
+                ;
+        };
     };
 
     combos {
