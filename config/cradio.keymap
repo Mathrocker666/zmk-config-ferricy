@@ -65,6 +65,14 @@
                 = <&macro_tap &kp GRAVE &kp U>
                 ;
         };
+        macro_o_grave: macro_o_grave {
+            label = "macro_o_grave";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp GRAVE &kp O>
+                ;
+        };
         macro_e_aigu: macro_e_aigu {
             label = "macro_e_aigu";
             compatible = "zmk,behavior-macro";
@@ -79,6 +87,14 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp DQT &kp E>
+                ;
+        };
+        macro_i_tre: macro_i_tre {
+            label = "macro_i_tre";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp I>
                 ;
         };
         macro_e_circ: macro_e_circ {
@@ -103,6 +119,14 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp CARET &kp U>
+                ;
+        };
+        macro_o_circ: macro_o_circ {
+            label = "macro_o_circ";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp CARET &kp O>
                 ;
         };
     };
@@ -155,7 +179,7 @@
 
         tri_layer {
             bindings = <
-            &sys_reset   &kp PSCRN  &kp LA(F4)  &none       &bt BT_SEL 0             &none   &kp RA(COMMA)   &none           &none           &none
+            &sys_reset   &kp PSCRN  &kp LA(F4)  &none       &bt BT_SEL 0             &none   &kp RA(COMMA)   &macro_o_grave  &macro_o_circ   &macro_i_tre
             &bootloader  &none      &none       &kp LSHFT   &bt BT_SEL 1             &none   &macro_e_aigu   &macro_e_grave  &macro_e_circ   &macro_e_tre
             &none        &none      &none       &bt BT_CLR  &bt BT_SEL 2             &none   &macro_a_grave  &macro_a_circ   &macro_u_grave  &macro_u_circ
                                                 &trans      &trans                   &trans  &trans
