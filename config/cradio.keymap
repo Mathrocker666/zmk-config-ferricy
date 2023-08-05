@@ -32,6 +32,17 @@
         };
     };
 
+    macros {
+        macro_sqt: macro_sqt {
+            label = "macro_sqt";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp SQT &kp SPACE>
+                ;
+        };
+    };
+
     combos {
                 compatible = "zmk,combos";
 
@@ -53,7 +64,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-            &kp Q      &kp W      &kp F      &kp P         &kp G            &kp J            &kp L      &kp U           &kp Y          &kp SQT
+            &kp Q      &kp W      &kp F      &kp P         &kp G            &kp J            &kp L      &kp U           &kp Y          &macro_sqt
             &kp A      HRML(R,    S,         T)            &kp D            &kp H            HRMR(N,    E,              I)             &kp O
             &kp Z      &kp X      &kp C      &kp V         &kp B            &kp K            &kp M      &ht SEMI COMMA  &ht MINUS DOT  &kp FSLH
                                              &lt 2 DEL     &kp ENTER        &ht LSHFT SPACE  &lt 1 BSPC
