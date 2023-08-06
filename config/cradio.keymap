@@ -180,7 +180,7 @@
         tri_layer {
             bindings = <
             &sys_reset   &kp PSCRN  &kp LA(F4)  &none       &bt BT_SEL 0             &kp GRAVE  &kp RA(COMMA)   &none  &macro_o_circ   &macro_i_tre
-            &bootloader  &none      &none       &kp LSHFT   &bt BT_SEL 1             &kp A      &macro_e_aigu   &macro_e_grave  &macro_e_circ   &macro_e_te
+            &bootloader  &none      &none       &kp LSHFT   &bt BT_SEL 1             &kp A      &macro_e_aigu   &macro_e_grave  &macro_e_circ   &macro_e_tre
             &none        &none      &none       &bt BT_CLR  &bt BT_SEL 2             &none      &macro_a_grave  &macro_a_circ   &macro_u_grave  &macro_u_circ
                                                 &trans      &trans                   &trans     &trans
             >;
