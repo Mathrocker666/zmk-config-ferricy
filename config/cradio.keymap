@@ -93,7 +93,7 @@
             bindings = <
             &sys_reset    &kp PSCRN         &none  &none       &none             &none       &kp GRAVE    &kp RA(COMMA)  &kp I  &kp U
             &bootloader   &none             &none  &kp LSHFT   &none             &none       &kp SQT      &kp E          &kp A  &kp O
-            &bt BT_SEL 0  &bt BT_SEL 1      &none  &bt BT_CLR  &none             &kp LA(F4)  &kp LS(SQT)  &none          &none  &none
+            &bt BT_SEL 1  &bt BT_SEL 2      &none  &bt BT_CLR  &none             &kp LA(F4)  &kp LS(SQT)  &none          &none  &none
                                             &none       &trans            &trans      &none
             >;
         };
