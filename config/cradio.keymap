@@ -84,7 +84,7 @@
             bindings = <
             &kp F2     &kp F5  &kp F10   &kp F11   &none         &kp CARET  &kp RPAR   &kp RBKT  &kp RBRC   &kp TILDE
             &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT     &kp STAR   &kp LPAR   &kp LBKT  &kp LBRC   &kp GRAVE
-            &none      &none   &none     &none     &none         &kp AMPS   &kp EQUAL  &SEMI     &kp MINUS  &kp PIPE 
+            &none      &none   &none     &none     &none         &kp AMPS   &kp EQUAL  &kp SEMI  &kp MINUS  &kp PIPE 
                                          &none     &none         &trans     &trans
             >;
         };
